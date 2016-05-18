@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div class="container">
+      <ol class="progtrckr">
+        <li class="progtrckr-{{stepStyles[i]}}" *ngFor="let step of steps; let i = index" (click)="changeStep(i)">
+          <span>{{step.name}}</span>
+        </li>
+      </ol>
+      <div id="multistep-outline"></div>  
+      <div>
+        <button class="multistep__btn--prev" (click)="previousStep()">prev</button>
+        <button class="multistep__btn--next" (click)="nextStep()">Next</button>
+      </div>
+    </div>
+</div>
